@@ -39,7 +39,31 @@
                 alert(result);
             }
 
-            function play()
+            function play(playerChoice) {
+                if (playerChoice == computer) {
+                    showResult("Dang you tied")
+                }
+                if (playerChoice == "rock" && computer == "paper") {
+                    showResult("Player dropkicks computer")
+                }
+                if (playerChoice == "rock" && computer == "scissors") {
+                    showResult("Player dropkicks computer")
+                }
+                if (playerChoice == "paper" && computer == "rock") {
+                    showResult("Computer Slaps down Player")
+                }
+                if (playerChoice == "paper" && computer == "scissor") {
+                    showResult("Computer Slaps down Player")
+                }
+                if (playerChoice == "scissor" && computer == "paper") {
+                    showResult("Player dropkicks computer")
+                }
+                if (playerChoice == "scissor" && computer == "rock") {
+                    showResult("Computer Slaps down Player")
+                }
+
+
+            }
 
 
         })();
@@ -59,7 +83,7 @@
             </div>
         </div>
     </div>
-    
+
 
 </body>
 
