@@ -5,20 +5,20 @@
     padding: 85px;
     
 }
-.rock {
+#rock {
     background-color: #353586;
     color: white;
     border-radius: 10px;
     
 }
 
-.paper {
+#paper {
     background-color: #3BBDD4;
     color: white;
     border-radius: 10px;
 }
 
-.scissor {
+#scissors {
     background-color: #64269E;
     color: white;
     border-radius: 10px;
