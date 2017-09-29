@@ -1,19 +1,25 @@
 .row1 {
     background-color: grey;
     height: 200px;
+    text-align: center;
+    padding: 85px;
     
 }
 .rock {
     background-color: #353586;
     color: white;
+    border-radius: 10px;
+    
 }
 
 .paper {
     background-color: #3BBDD4;
     color: white;
+    border-radius: 10px;
 }
 
 .scissor {
     background-color: #64269E;
     color: white;
+    border-radius: 10px;
 }
