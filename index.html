@@ -7,67 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href=".../bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <script>
-        (function () {
-            console.log('IIFE');
-            var choices = ['rock', 'paper', 'scissors'];
-            var index = Math.floor((Math.random() * 2));
-            var computer = choices[index];
-            var rock = document.getElementById('rock');
-            var paper = document.getElementById('paper');
-            var scissors = document.getElementById('scissors');
-
-            rock.addEventListener('click', function () {
-                play('rock');
-            });
-
-            paper.addEventListener('click', function () {
-                play('paper');
-            });
-
-            scissors.addEventListener('click', function () {
-                play('scissors');
-            });
-
-            function showResult(result) {
-                alert(result);
-            }
-
-            function play(playerChoice) {
-                if (playerChoice == computer) {
-                    showResult("Dang you tied")
-                }
-                if (playerChoice == "rock" && computer == "paper") {
-                    showResult("Player dropkicks computer")
-                }
-                if (playerChoice == "rock" && computer == "scissors") {
-                    showResult("Player dropkicks computer")
-                }
-                if (playerChoice == "paper" && computer == "rock") {
-                    showResult("Computer Slaps down Player")
-                }
-                if (playerChoice == "paper" && computer == "scissor") {
-                    showResult("Computer Slaps down Player")
-                }
-                if (playerChoice == "scissor" && computer == "paper") {
-                    showResult("Player dropkicks computer")
-                }
-                if (playerChoice == "scissor" && computer == "rock") {
-                    showResult("Computer Slaps down Player")
-                }
-
-
-            }
-
-
-        })();
-    </script>
+    
     <div class="bg-color">
         <div class="container">
             <div class="row1">
@@ -83,7 +28,61 @@
             </div>
         </div>
     </div>
-
+    <script>
+            (function () {
+                console.log('IIFE');
+                var choices = ['rock', 'paper', 'scissors'];
+                var index = Math.floor((Math.random() * 2));
+                var computer = choices[index];
+                var rock = document.getElementById('rock');
+                var paper = document.getElementById('paper');
+                var scissors = document.getElementById('scissors');
+    
+                rock.addEventListener('click', function () {
+                    play('rock');
+                });
+    
+                paper.addEventListener('click', function () {
+                    play('paper');
+                });
+    
+                scissors.addEventListener('click', function () {
+                    play('scissors');
+                });
+    
+                function showResult(result) {
+                    alert(result);
+                }
+    
+                function play(playerChoice) {
+                    if (playerChoice == computer) {
+                        showResult("Dang you tied")
+                    }
+                    if (playerChoice == "rock" && computer == "paper") {
+                        showResult("Player dropkicks computer")
+                    }
+                    if (playerChoice == "rock" && computer == "scissors") {
+                        showResult("Player dropkicks computer")
+                    }
+                    if (playerChoice == "paper" && computer == "rock") {
+                        showResult("Computer Slaps down Player")
+                    }
+                    if (playerChoice == "paper" && computer == "scissor") {
+                        showResult("Computer Slaps down Player")
+                    }
+                    if (playerChoice == "scissor" && computer == "paper") {
+                        showResult("Player dropkicks computer")
+                    }
+                    if (playerChoice == "scissor" && computer == "rock") {
+                        showResult("Computer Slaps down Player")
+                    }
+    
+    
+                }
+    
+    
+            })();
+        </script>
 
 </body>
 
