@@ -1,5 +1,19 @@
 .row1 {
     background-color: grey;
-    height: 200px
+    height: 200px;
+    
+}
+.rock {
+    background-color: #353586;
+    color: white;
+}
 
+.paper {
+    background-color: #3BBDD4;
+    color: white;
+}
+
+.scissor {
+    background-color: #3BBDD4;
+    color: white;
 }
