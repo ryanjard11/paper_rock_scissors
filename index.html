@@ -32,7 +32,7 @@
         (function () {
             console.log('IIFE');
             var choices = ['rock', 'paper', 'scissors'];
-            var index = Math.floor((Math.random() * 2));
+            var index = Math.floor((Math.random() * 3));
             var computer = choices[index];
             var rock = document.getElementById('rock');
             var paper = document.getElementById('paper');
@@ -55,6 +55,8 @@
             }
 
             function play(playerChoice) {
+                index = Math.floor((Math.random() * 3));
+                computer = choices[index];
                 console.log (playerChoice, computer)
                 if (playerChoice == computer) {
                     showResult("Dang you tied")
@@ -68,7 +70,7 @@
                 if (playerChoice == "paper" && computer == "rock") {
                     showResult("Computer Slaps down Player")
                 }
-                if (playerChoice == "paper" && computer == "scissor") {
+                if (playerChoice == "paper" && computer == "scissors") {
                     showResult("Computer Slaps down Player")
                 }
                 if (playerChoice == "scissors" && computer == "paper") {
