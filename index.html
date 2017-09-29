@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,44 @@
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        (Function() {
-            consol.log('IIFE');
-        })
-        
-        
-        
-        
-        ();
+        (function () {
+            console.log('IIFE');
+            var choices = ['rock', 'paper', 'scissors'];
+            var index = Math.floor((Math.random() * 2));
+            var computer = choices[index];
+            var rock = document.getElementById('rock');
+            var paper = document.getElementById('paper');
+            var scissors = document.getElementById('scissors');
+
+            rock.addEventListener('click', function () {
+                play('rock');
+            });
+
+            paper.addEventListener('click', function () {
+                play('paper');
+            });
+
+            scissors.addEventListener('click', function () {
+                play('scissors');
+            });
+
+            function showRseult(result) {
+                alert(result);
+            }
+
+            
+
+
+        })();
     </script>
 
-<button onclick="play('rock')">Rock</button>
-<button onclick="play('paper')">Paper</button>
-<button onclick="play('scissor')">Scissor</button>
-    
+    <button onclick="play('rock')">Rock</button>
+    <button onclick="play('paper')">Paper</button>
+    <button onclick="play('scissor')">Scissor</button>
+
 </body>
+
 </html>
